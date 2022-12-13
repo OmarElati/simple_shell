@@ -4,7 +4,7 @@ This simple Shell - **Shell** - is a programm that provides an interface for use
 
 This shell is able to run default commands and also some other that have been built in (More info inside the Man Page).
 
-##  Usage
+## Usage
 
 The shell takes the commands from the standard input, executes them and gets ready to read another command-line.
 
