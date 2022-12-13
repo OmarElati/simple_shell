@@ -60,5 +60,6 @@ A pipeline is a sequence of one or more commands separated by one of the control
 - A shell maintains an environment that includes a set of variables defined by the login program, the system initialization file, and the user initialization files.
 .SH BUGS
 - There is no known bugs at the moment.
+
 .SH AUTHORS
 Lazher Hedfi and Omar Elati
