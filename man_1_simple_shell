@@ -1,0 +1,64 @@
+.TH SHELL 1 "07 december 2022" GNU "Shell man page"
+.SH NAME
+.B hsh
+- Command line interpreter (shell)
+.SH SYNOPSIS
+The shell is executed by typing ./hsh
+.br
+[command] [options ...]
+.SH DESCRIPTION
+.B hsh
+is a shell command interpreter that executes command read from the standard input or from file.
+.br
+- Executes any command with its arguments
+.br
+- Executes built-in commands
+.SH BUILT-IN FUNCTIONS
+- Those are the available built-in functions:
+.br
+- exit : exit the shell
+.br
+- cd : Change Directory
+.br
+- help : Display the help page
+.br
+- history : Display history of commands used
+.br
+- alias : Put an alias for a command
+.br
+- env : Display the environment variables
+.SS
+Piplines
+A pipeline is a sequence of one or more commands separated by one of the control operators | or |&.  The format for a pipeline is:
+.PP
+[command [..ARGS]] [| - |&] [command2 [..ARGS]]
+.br
+- Handle the command seperator ; :
+.br
+- the first command is executed, and the second one is started as soon as the first one has finished.
+.br
+- Handle && and || logical operators :
+.br
+- && and || are shell operators. They are used to combine the results of two commands. Because they are shell syntax, they have special syntactical significance and cannot be used as arguments to commands.
+.br
+- handle the $? variable :
+.br
+- $? determines the exit status of the executed command.
+.br
+- handle the $$ variable :
+.br
+- The $$ is the process id of the shell in which your script is running.
+.br
+- handle variable replacement :
+.br
+- Variable substitution enables the shell programmer to manipulate the value of a variable based on its state.
+.SH EXIT STATUS
+- The exit value depends on how a function has terminated. Every error is identified by a certain value. On success it will always return 0.
+.SH RETURN VALUE
+- Return 0 on success, otherwise it will return the exit value.
+.SH ENVIRONMENT
+- A shell maintains an environment that includes a set of variables defined by the login program, the system initialization file, and the user initialization files.
+.SH BUGS
+- There is no known bugs at the moment.
+.SH AUTHORS
+Lazher Hedfi and Omar Elati
